@@ -59,7 +59,11 @@
 							"name": "Set variable2",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "jsondata",
+								"value": "@string(item())"
+							}
 						}
 					]
 				}
@@ -88,6 +92,9 @@
 		"variables": {
 			"voutputfolderlist": {
 				"type": "Array"
+			},
+			"jsondata": {
+				"type": "String"
 			}
 		},
 		"annotations": [],
